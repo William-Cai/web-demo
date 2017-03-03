@@ -13,7 +13,7 @@
 ```
 参数`-g`表示全局(global)安装 webpack，这样就可以直接使用`webpack`命令了。
 
-webpack有一个web服务器，基于node.js创建一个本地服务器。
+webpack有一个web服务器，基于node.js创建一个本地服务器。  
 ```sh
     npm install webpack-dev-server -g
 ```
