@@ -3,7 +3,7 @@
 
 ## 准备工作
 - 安装[node.js](https://nodejs.org/).  
-  环境需要安装。
+环境需要安装。
 ---
 
 - 安装Webpack  
@@ -13,7 +13,7 @@
 ```
 参数`-g`表示全局(global)安装 webpack，这样就可以直接使用`webpack`命令了。
 
-webpack有一个web服务器，基于node.js创建一个本地服务器，默认3000端口。
+webpack有一个web服务器，基于node.js创建一个本地服务器。
 ```sh
     npm install webpack-dev-server -g
 ```
