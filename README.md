@@ -77,7 +77,7 @@ document.writeln('It works!');
 
 - 安装jQuery来做AJAX的请求
 ```sh
-    npm install jquery -save-dev
+    npm install jquery --save
 ```
 
 -安装[Babel](https://babeljs.io)的loader来支持ES6的语法：
