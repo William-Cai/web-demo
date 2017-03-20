@@ -155,6 +155,46 @@ content，修改如下
 ```
 
 
-## 进阶-1
+## 进阶-1 配置文件修改webpack.config.js
+- 入口文件修改
+```js  
+    var path = require('path');  
+    var glob = require('glob');
+    
+    /**
+     * webpack 入口文件键值堆
+     * @param root 项目工程路径
+     * @returns {{}}  
+     */  
+    function getExports(root) {  
+        var files = glob.sync(root);  
+        var entries = {}, entry, dirname, basename;  
+        
+        files.forEach(function (file) {  
+            entry = file;  
+            dirname = path.dirname(entry);  
+            basename = path.basename(entry, '.js');  
+            entries[path.join(dirname, basename)] = entry;  
+        });  
+    
+        return entries;  
+    };
+    
+    ...
+    module.exports ={
+        entry: Object.assign({}, getExports("./app/**/*.js"), {common: ['jquery', 'bootstrap']}),
+        ...
+    }
+    
+```
+以上会根据目录生成对应的目录结构。
 
-## 进阶-2
+
+## 进阶-2 使用Redux  
+[Redux英文网站](https://redux.js.org/)，也可以查看中文[Redux中文](http://www.redux.org.cn/)。  
+Redux 是 JavaScript 状态容器，提供可预测化的状态管理。  
+<b style="color:red">注意</b>，与React无直接关联。  
+- 流程  
+![Redux流程图](https://github.com/githubwinnie/web-demo/blob/master/img/redux-flow.png)
+
+## 进阶-3 使用react-redux  
