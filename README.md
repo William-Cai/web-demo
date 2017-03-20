@@ -195,6 +195,7 @@ content，修改如下
 Redux 是 JavaScript 状态容器，提供可预测化的状态管理。  
 <b style="color:red">注意</b>，与React无直接关联。  
 - 流程  
-![Redux流程图](https://github.com/githubwinnie/web-demo/blob/master/img/redux-flow.png)
+<img src="https://github.com/githubwinnie/web-demo/blob/master/img/redux-flow.png" />
 
 ## 进阶-3 使用react-redux  
+![关系图](https://github.com/githubwinnie/web-demo/blob/master/img/react-redux.png)
